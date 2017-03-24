@@ -2,17 +2,20 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
   View
 } from 'react-native';
-import Header from './src/component/Header'
+
+import Header from './src/Header'
+import NewsList from './src/NewsList' 
 
 //Create a class component
 export default class News extends Component {
   render() {
     return (
-      <Header />
+      <View>
+        <Header />
+        <NewsList />
+      </View>
     );
   }
 }
