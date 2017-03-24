@@ -1,6 +1,6 @@
 //Import libraries
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView, Text } from 'react-native';
 import axios from 'axios';
 import NewsDetails from './NewsDetails'
 
@@ -32,9 +32,9 @@ export default class NewsList extends Component {
 
 	render() {
 		return(
-			<View>
+			<ScrollView>
 				{this.renderNews()}
-			</View>
+			</ScrollView>
 		);
 	}
 }

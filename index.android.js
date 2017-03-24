@@ -12,7 +12,7 @@ import NewsList from './src/NewsList'
 export default class News extends Component {
   render() {
     return (
-      <View>
+      <View style={{flex: 1}}>
         <Header />
         <NewsList />
       </View>
