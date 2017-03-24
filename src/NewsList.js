@@ -1,6 +1,6 @@
 //Import libraries
 import React, { Component } from 'react';
-import { ScrollView, Text } from 'react-native';
+import { ScrollView, Text, Linking } from 'react-native';
 import axios from 'axios';
 import NewsDetails from './NewsDetails'
 
@@ -27,7 +27,11 @@ export default class NewsList extends Component {
 
 	renderNews(){
 		return this.state.news.map(news => 
-			<NewsDetails key={news.title} news={news} />);
+			<NewsDetails 
+				key={news.title} 
+				news={news} 
+				openBroweser={() => Linking.openURL(news.url)}
+			/>);
 	}
 
 	render() {

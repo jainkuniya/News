@@ -1,6 +1,6 @@
 //Import libraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, TouchableOpacity, Text, StyleSheet, Image } from 'react-native';
 import styles from './styles'
 
 //more styles
@@ -44,13 +44,12 @@ export default class NewsDetails extends Component{
 	
 
 	render(){
-		const { news } = this.props;
+		const { news, openBroweser } = this.props;
 		const { 
 			author,
 			description,
 			publishedAt,
 			title,
-			url,
 			urlToImage 
 		} = news;
 		const { 
@@ -63,7 +62,11 @@ export default class NewsDetails extends Component{
 		} = moreStyles;
 		console.log(urlToImage);
 		return (
-			<View style={[styles.cardView, containerStyle]}>
+			<TouchableOpacity 
+				style={[styles.cardView, containerStyle]}
+				activeOpacity={0.7}
+				onPress={openBroweser}
+			>
 				<View>
 					<Image
 						style={imageStyle}
@@ -74,7 +77,7 @@ export default class NewsDetails extends Component{
 				</View>
 				<Text style={descriptionStyle}>{description}</Text>
 				<Text style={publishedAtStyle}>{publishedAt}</Text>
-			</View>
+			</TouchableOpacity>
 		);
 	}
 }
