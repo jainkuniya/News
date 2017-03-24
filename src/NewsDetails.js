@@ -10,8 +10,7 @@ const moreStyles = StyleSheet.create({
 		flex: 1,
 	},
 	imageStyle: {
-		height: 200,
-	    width: 320,    
+		height: 200,   
 	},
 	titleStyle: {
 		fontSize: 14,
@@ -67,7 +66,7 @@ export default class NewsDetails extends Component{
 				activeOpacity={0.7}
 				onPress={openBroweser}
 			>
-				<View>
+				<View style={{alignSelf: 'stretch'}}>
 					<Image
 						style={imageStyle}
 						source={{ uri: urlToImage }}
