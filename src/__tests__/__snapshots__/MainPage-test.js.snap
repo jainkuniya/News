@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "marginTop": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        },
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F8F8F8",
+          "elevation": 2,
+          "justifyContent": "center",
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.2,
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "flex": 1,
+          "fontSize": 16,
+        }
+      }
+    >
+      Sources
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "flex": 2,
+          },
+        ]
+      }
+    >
+      <RCTPicker
+        items={Array []}
+        onChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
+        style={
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "marginTop": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        },
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F8F8F8",
+          "elevation": 2,
+          "justifyContent": "center",
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.2,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "padding": 8,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "borderColor": "#000000",
+            "borderRadius": 4,
+            "borderWidth": 0.5,
+            "marginLeft": 16,
+            "marginRight": 16,
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "paddingLeft": 16,
+              "paddingRight": 16,
+            }
+          }
+        >
+          Latest
+        </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "borderColor": "#d6d7da",
+            "borderRadius": 4,
+            "borderWidth": 0.5,
+            "marginLeft": 16,
+            "marginRight": 16,
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "paddingLeft": 16,
+              "paddingRight": 16,
+            }
+          }
+        >
+          Top
+        </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "borderColor": "#d6d7da",
+            "borderRadius": 4,
+            "borderWidth": 0.5,
+            "marginLeft": 16,
+            "marginRight": 16,
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "paddingLeft": 16,
+              "paddingRight": 16,
+            }
+          }
+        >
+          Popular
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View>
+    <RCTScrollView>
+      <View />
+    </RCTScrollView>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingTop": 84,
+          "position": "relative",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        No news available
+      </Text>
+    </View>
+  </View>
+</View>
+`;
