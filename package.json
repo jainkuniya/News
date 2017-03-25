@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test:lint": "eslint --fix src/components",
+    "test:lint": "eslint src/components",
     "test:unit": "jest",
     "test": "npm run test:lint && npm run test:unit"
   },

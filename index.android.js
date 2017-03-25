@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 
 import Header from './src/components/Header';
-import NewsList from './src/components/NewsList';
+import MainPage from './src/components/MainPage';
 
 //Create a class component
 export default class News extends Component {
@@ -14,7 +14,7 @@ export default class News extends Component {
     return (
       <View style={{ flex: 1 }}>
         <Header />
-        <NewsList />
+        <MainPage />
       </View>
     );
   }

@@ -1,43 +1,38 @@
 //Import libraries
 import React, { Component } from 'react';
-import { ScrollView, Linking } from 'react-native';
-import axios from 'axios';
+import { View, Text, ScrollView, Linking, StyleSheet } from 'react-native';
 import NewsDetails from './NewsDetails';
 
+//more styles
+const moreStyles = StyleSheet.create({
+	emptyTextStyle: {
+		position: 'relative',
+		justifyContent: 'center',
+		alignItems: 'center',
+		paddingTop: 84,
+	},
+});
 
 //Create class component
-export default class NewsList extends Component {
-
-	constructor() {
-		super();
-		this.state = {
-			news: [],
-		};
-	}
-
-	componentWillMount() {
-		// Make a GET request to get news
-		axios.get('https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=edba351311594c4aa0d0f3a0611d7720')
-			.then(response => this.setState({ news: response.data.articles }))
-			.catch((error) => {
-			console.log(error);
-		});
-	}
-
-	renderNews() {
-		return this.state.news.map(news => 
-			<NewsDetails 
-				key={news.title} 
-				news={news} 
-				openBroweser={() => Linking.openURL(news.url)}
-			/>);
-	}
+export default class NewsLists extends Component {
 
 	render() {
+		const { emptyTextStyle } = moreStyles;
+
 		return (
-			<ScrollView>
-				{this.renderNews()}
-			</ScrollView>
+			<View>
+				<ScrollView >
+					{this.props.news.map(news => 
+						<NewsDetails 
+							key={news.title} 
+							news={news} 
+							openBroweser={() => Linking.openURL(news.url)}
+						/>)}
+				</ScrollView>
+				<View style={emptyTextStyle}>
+					<Text>No news available</Text>
+				</View>
+			</View>
 		);
 	}
 }
