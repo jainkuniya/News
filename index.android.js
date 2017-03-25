@@ -12,7 +12,7 @@ import MainPage from './src/components/MainPage';
 export default class News extends Component {
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: '#dedede' }}>
         <Header />
         <MainPage />
       </View>
