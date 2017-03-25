@@ -242,7 +242,7 @@ exports[`renders correctly 1`] = `
         allowFontScaling={true}
         ellipsizeMode="tail"
       >
-        No news available
+        loading...
       </Text>
     </View>
   </View>

@@ -34,6 +34,7 @@ export default class MainPage extends Component {
 			currentSourceId: 'the-next-web',
 			sources: [],
 			sortBy: 'latest',
+			message: 'loading...',
 		};
 	}
 
@@ -53,7 +54,9 @@ export default class MainPage extends Component {
 	onValueChange = (id: string) => {
 		//update selected source in picker
 		this.setState({ 
-			currentSourceId: id, 
+			currentSourceId: id,
+			news: [],
+			message: 'loading...',
 		});
 		this.fetchNews(id, this.state.sortBy);		
 	};
@@ -61,6 +64,8 @@ export default class MainPage extends Component {
 	onSortSelect = (sort: string) => {
 		this.setState({
 			sortBy: sort,
+			news: [],
+			message: 'loading...',
 		});
 		this.fetchNews(this.state.currentSourceId, sort);
 	}
@@ -71,7 +76,10 @@ export default class MainPage extends Component {
 			.then(response => this.setState({ news: response.data.articles }))
 			.catch((error) => {
 			console.log(error);
-			this.setState({ news: [] });
+			this.setState({ 
+				news: [],
+				message: 'No news available :(',
+			});
 		});
 	}
 
@@ -106,7 +114,8 @@ export default class MainPage extends Component {
 					/>
 				</View>
 				<NewsList
-					news={this.state.news}
+					newsList={this.state.news}
+					message={this.state.message}
 				/>
 			</View>
 		);

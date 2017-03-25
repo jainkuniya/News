@@ -18,11 +18,12 @@ export default class NewsLists extends Component {
 
 	render() {
 		const { emptyTextStyle } = moreStyles;
+		const { message } = this.props;
 
 		return (
 			<View>
 				<ScrollView >
-					{this.props.news.map(news => 
+					{this.props.newsList.map(news => 
 						<NewsDetails 
 							key={news.title} 
 							news={news} 
@@ -30,7 +31,7 @@ export default class NewsLists extends Component {
 						/>)}
 				</ScrollView>
 				<View style={emptyTextStyle}>
-					<Text>No news available</Text>
+					<Text>{message}</Text>
 				</View>
 			</View>
 		);
