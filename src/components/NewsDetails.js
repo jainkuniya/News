@@ -1,7 +1,7 @@
 //Import libraries
 import React, { Component } from 'react';
 import { View, TouchableOpacity, Text, StyleSheet, Image } from 'react-native';
-import styles from './styles'
+import styles from '../common/styles';
 
 //more styles
 const moreStyles = StyleSheet.create({
@@ -39,10 +39,10 @@ const moreStyles = StyleSheet.create({
 });
 
 //create component
-export default class NewsDetails extends Component{
+export default class NewsDetails extends Component {
 	
 
-	render(){
+	render() {
 		const { news, openBroweser } = this.props;
 		const { 
 			author,
@@ -66,7 +66,7 @@ export default class NewsDetails extends Component{
 				activeOpacity={0.7}
 				onPress={openBroweser}
 			>
-				<View style={{alignSelf: 'stretch'}}>
+				<View style={{ alignSelf: 'stretch' }}>
 					<Image
 						style={imageStyle}
 						source={{ uri: urlToImage }}

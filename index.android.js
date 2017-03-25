@@ -5,14 +5,14 @@ import {
   View
 } from 'react-native';
 
-import Header from './src/Header'
-import NewsList from './src/NewsList' 
+import Header from './src/components/Header';
+import NewsList from './src/components/NewsList';
 
 //Create a class component
 export default class News extends Component {
   render() {
     return (
-      <View style={{flex: 1}}>
+      <View style={{ flex: 1 }}>
         <Header />
         <NewsList />
       </View>

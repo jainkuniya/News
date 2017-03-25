@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hitSlop={undefined}
+  isTVSelectable={true}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F8F8F8",
+      "elevation": 2,
+      "flex": 1,
+      "justifyContent": "center",
+      "marginTop": 12,
+      "opacity": 1,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.2,
+    }
+  }
+  testID={undefined}
+  tvParallaxProperties={undefined}
+>
+  <View
+    style={
+      Object {
+        "alignSelf": "stretch",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "newsImageURL",
+        }
+      }
+      style={
+        Object {
+          "height": 200,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "rgba(255,255,255,0.8)",
+          "color": "brown",
+          "fontSize": 14,
+          "padding": 2,
+          "position": "absolute",
+          "top": 0,
+        }
+      }
+    >
+      newsAuthor
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "rgba(255,255,255,0.6)",
+          "bottom": 0,
+          "color": "black",
+          "fontSize": 14,
+          "padding": 8,
+          "position": "absolute",
+        }
+      }
+    >
+      newsTitle
+    </Text>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "padding": 8,
+      }
+    }
+  >
+    newsDescription
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 10,
+        "justifyContent": "flex-start",
+        "paddingBottom": 2,
+      }
+    }
+  >
+    newsTimeStamp
+  </Text>
+</View>
+`;

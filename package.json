@@ -4,17 +4,23 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test:lint": "eslint --fix src/components",
+    "test:unit": "jest",
+    "test": "npm run test:lint && npm run test:unit"
   },
   "dependencies": {
     "axios": "^0.15.3",
     "react": "15.4.2",
-    "react-native": "0.42.3"
+    "react-native": "0.42.3",
+    "react-test-renderer": "15.4.2"
   },
   "devDependencies": {
     "babel-jest": "19.0.0",
     "babel-preset-react-native": "1.9.1",
+    "eslint-config-airbnb": "^14.1.0",
     "eslint-config-rallycoding": "^3.2.0",
+    "eslint-plugin-react-native": "^2.3.1",
+    "eslint-plugin-spellcheck": "0.0.8",
     "jest": "19.0.2",
     "react-test-renderer": "15.4.2"
   },
