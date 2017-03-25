@@ -18,7 +18,7 @@ export default class News extends Component {
 	render() {
 		const { headerViewStyle, headerTextStyle } = moreStyles;
 
-		return(
+		return (
 			<View style={[styles.cardView, headerViewStyle]}>
 				<Text style={headerTextStyle}>News</Text>
 			</View>
